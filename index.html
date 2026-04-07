@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Crumbs Bakery</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#fff8f0;
+color:#333;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 50px;
+background:#8b4513;
+color:white;
+}
+
+nav h1{
+font-size:24px;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+text-decoration:underline;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:url("https://images.unsplash.com/photo-1608198093002-ad4e005484ec") center/cover;
+color:white;
+}
+
+.hero h2{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero button{
+padding:12px 25px;
+border:none;
+background:#ffb347;
+color:#333;
+font-weight:bold;
+cursor:pointer;
+border-radius:5px;
+}
+
+.hero button:hover{
+background:#ffa500;
+}
+
+/* SECTION */
+
+section{
+padding:50px 10%;
+text-align:center;
+}
+
+/* PRODUCTS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.testimonial{
+background:#fff;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* CONTACT */
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+input,textarea{
+padding:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button.submit{
+background:#8b4513;
+color:white;
+border:none;
+padding:12px;
+cursor:pointer;
+border-radius:5px;
+}
+
+button.submit:hover{
+background:#5c2e0e;
+}
+
+/* FOOTER */
+
+footer{
+background:#8b4513;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+.hero h2{
+font-size:28px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<h1>Sweet Crumbs Bakery</h1>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#testimonials">Testimonials</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+<h2>Freshly Baked Happiness</h2>
+<p>Delicious cakes, breads and pastries made with love.</p>
+<br>
+<button onclick="alert('Welcome to Sweet Crumbs Bakery!')">Order Now</button>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+<h2>About Us</h2>
+<p>
+Sweet Crumbs Bakery is dedicated to bringing freshly baked goods to our customers every day.
+Our bakery combines traditional baking techniques with modern flavors to create delicious
+cakes, pastries, and breads. We believe every bite should bring joy and warmth.
+</p>
+</section>
+
+<!-- PRODUCTS -->
+
+<section id="products">
+<h2>Our Products</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587">
+<h3>Chocolate Cake</h3>
+<p>Rich and creamy chocolate cake.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1605475120514-71f4b1c1f8f1">
+<h3>Croissants</h3>
+<p>Fresh buttery croissants.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587735243615-c03f25aaff15">
+<h3>Cupcakes</h3>
+<p>Colorful and tasty cupcakes.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec">
+<h3>Fresh Bread</h3>
+<p>Warm and soft homemade bread.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section id="testimonials">
+<h2>Customer Testimonials</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+<p>"Absolutely the best bakery in town! The cakes are amazing."</p>
+<b>- Riya Sharma</b>
+</div>
+
+<div class="testimonial">
+<p>"Fresh bread every morning. I love their croissants!"</p>
+<b>- Aman Verma</b>
+</div>
+
+<div class="testimonial">
+<p>"Great taste and beautiful presentation."</p>
+<b>- Neha Singh</b>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+<h2>Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea rows="4" placeholder="Your Message"></textarea>
+
+<button class="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Sweet Crumbs Bakery | Designed for College Project</p>
+
+</footer>
+
+</body>
+</html>
